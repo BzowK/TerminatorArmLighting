@@ -41,7 +41,6 @@ The steps below are to light the base and a top lid (which I prefer.)  If you on
 4. Save the code, then compile and download the BIN file
 5. Connect the microcontroller to the PC via USB then use [ESPHome-Flasher](https://github.com/esphome/esphome-flasher) to flash the BIN to it
 
-
 **Assemble Top**
 
 1. If including the top lighting, print the two STLs included.  I used PLA with a 10% infill, and 0.6mm nozzle.  Optionally sand, prime, and paint once done
@@ -56,5 +55,7 @@ The steps below are to light the base and a top lid (which I prefer.)  If you on
 5. Wire the LEDs for the base in the same manner, then join their pair of wires to the pair coming from the top
 6. Follow the diagram to hook up all electronics.  *(I didn't use a breadboard but included it in image for demonstration purposes)*
 7. The female end of the DC Power Pigtail Cable should virtually be attached to the 12V rail
+
+![](https://github.com/BzowK/TerminatorArmLighting/blob/master/TerminatorArmCase_bb.jpg?raw=true)
 
 Once done, plug it in and wait a few seconds for everything to load.  It may not light up initially.  In the ESPHome node of Home Assistant, the node you added should turn green once online.  Add a "Light" button to your Lovelace dashboard and configure for your device.  Add any automations desired - enjoy! 
