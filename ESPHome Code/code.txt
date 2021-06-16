@@ -1,0 +1,33 @@
+esphome:
+  name: terminatorarm
+  platform: ESP8266
+  board: d1_mini
+
+wifi:
+  ssid: "YOURSSID"
+  password: "WIFIPASWORD"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Terminatorarm Fallback Hotspot"
+    password: "XXXXXXXXX"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+
+light:
+  - platform: monochromatic
+    name: "Terminator Arm"
+    output: output_component1
+
+output:
+  - platform: esp8266_pwm
+    id: output_component1
+    pin: D7
